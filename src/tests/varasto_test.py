@@ -58,7 +58,7 @@ class TestVarasto(unittest.TestCase):
     
     def test_voi_ottaa_vain_mita_on(self):
         self.varasto.ota_varastosta(100000000)
-        self.assertEqual(self.varasto.saldo, 0)
+        self.assertEqual(self.varasto.saldo, 10)
     
     def test_negaa_ei_voi_nyhjaista(self):
         otettu = self.varasto.ota_varastosta(-10)
